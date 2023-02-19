@@ -62,7 +62,7 @@ class _RestClient(object):
 
     def __init__(self, conf):
         self.session = Session()
-
+        self.session.verify=False
         # copy dict to avoid mutating the original
         conf_copy = conf.copy()
 
